@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<title>Chuyển hướng</title>
+
+<body>
+  <script>
+    const listLink = [
+      { id: '0', link: 'https://www.google.com' },
+    ];
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id') || '';
+
+    if (id) {
+      window.location.assign(listLink.find(x => x.id === id).link);
+    } else {
+      window.alert('Link không tồn tại!');
+      window.close();
+    }
+  </script>
+</body>
+
+</html>

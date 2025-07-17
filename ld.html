@@ -5,66 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mở Link</title>
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f2f2f7;
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        max-width: 600px;
-        margin: 50px auto;
-        background: #fff;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-    }
-    .form-group {
-        display: flex;
-        margin-bottom: 20px;
-    }
-    .form-group input {
-        flex: 1;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px 0 0 4px;
-        outline: none;
-    }
-    .form-group button {
-        padding: 10px 20px;
-        font-size: 16px;
-        border: none;
-        background: #4CAF50;
-        color: white;
-        border-radius: 0 4px 4px 0;
-        cursor: pointer;
-    }
-    .form-group button:hover {
-        background: #45a049;
-    }
-    .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-    }
-    .links button {
-        padding: 8px 16px;
-        font-size: 14px;
-        border: none;
-        background: #2196F3;
-        color: white;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .links button:hover {
-        background: #1976D2;
-    }
+    body{font-family:Arial,sans-serif;background:#f2f2f7;margin:0;padding:0}.container{max-width:600px;margin:50px auto;background:#fff;border-radius:8px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.1)}h1{text-align:center;color:#333}.form-group{display:flex;margin-bottom:20px}.form-group input{flex:1;padding:10px;font-size:16px;border:1px solid #ccc;border-radius:4px 0 0 4px;outline:0}.form-group button{padding:10px 20px;font-size:16px;border:none;background:#4caf50;color:#fff;border-radius:0 4px 4px 0;cursor:pointer}.form-group button:hover{background:#45a049}.links{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.links button{padding:8px 16px;font-size:14px;border:none;background:#2196f3;color:#fff;border-radius:4px;cursor:pointer}.links button:hover{background:#1976d2}
 </style>
 </head>
 <body>
@@ -81,8 +22,15 @@
 
 <script>
     const quickLinks = [
-        { label: "Facebook", url: "https://www.facebook.com" },
-        { label: "Zalo", url: "https://chat.zalo.me" }
+        { label: "FB", url: "https://www.facebook.com" },
+        { label: "Mess", url: "https://www.facebook.com/messages/e2ee/t" },
+        { label: "Zalo", url: "https://chat.zalo.me" },
+        { label: "Gmail", url: "https://mail.google.com" },
+        { label: "TeleWeb", url: "https://web.telegram.org" },
+        { label: "TwitterX", url: "https://x.com" },
+        { label: "Twitch.tv", url: "https://www.twitch.tv" },
+        { label: "IG", url: "https://www.instagram.com" },
+        { label: "TikTok", url: "https://www.tiktok.com" },
     ];
 
     function openUrl() {
